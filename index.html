@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/product-info.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header id="nav-bar">Collections Men Women About Contact</header>
+    <div id="content-container">
+      <section id="lightbox-container">
+        <img src="./images/image-product-1.jpg" id="testImg" />
+      </section>
+      <section id="product-info">
+        <div id="product-details">
+          <span id="company-name">SNEAKER COMPANY</span>
+          <h1 id="product-name">Fall Limited Edition Sneakers</h1>
+          <p id="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div id="price-container">
+          <span id="curr-price">$125.00</span>
+          <span id="discount">50%</span>
+          <span id="prev-price">$250.00</span>
+        </div>
+        <div id="checkout-container">
+          <div id="counter">
+            <button id="minus-button">
+              <img src="./images/icon-minus.svg" />
+            </button>
+            <p id="counter-display">0</p>
+            <button id="plus-button">
+              <img src="./images/icon-plus.svg" />
+            </button>
+          </div>
+          <button id="addToCart-button">
+            <img src="./images/icon-cart.svg" />Add to cart
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="product-info.js"></script>
+  </body>
+</html>
