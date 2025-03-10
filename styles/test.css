@@ -34,29 +34,33 @@
     width: 100%;
 }
 
-.thumbnails{
+.thumbnails div {
     max-width: 90px;
     max-height: 90px;
     margin: 0 2px;
-
 }
 
-.tn:hover {
-    opacity: 50%;
-}
 
-.tn {
+.thumbnails img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
     cursor: pointer;
 }
 
-#thumbnais .active img{
+.thumbnails img:hover {
+    opacity: 50%;
+}
+
+.thumbnails .active img {
     opacity: 30%;
 }
 
-#thumbnails .active {
-    border: 2px solid orange;
+.thumbnails .active {
+    border: 2px solid hsl(26, 100%, 55%) ;
     border-radius: 13px;
+    margin: 0px;
+    
 }
+
+
