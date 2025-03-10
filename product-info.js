@@ -1,8 +1,8 @@
 let count = 0;
-let counterD = document.getElementById("counter-display");
-let plusBtn = document.getElementById("plus-button");
-let minusBtn = document.getElementById("minus-button");
-let addToCart = document.getElementById("addToCart-button");
+let counterD = document.querySelector(".counter-display");
+let plusBtn = document.querySelector(".plus-button");
+let minusBtn = document.querySelector(".minus-button");
+let addToBtn = document.querySelector(".addToCart-button");
 
 function increment() {
     count++;
@@ -33,8 +33,10 @@ function updateCount(text, animationClass) {
 
 function addItem() {
     alert(count);
+    counterD.textContent = "0";
+    count = 0;
 }
 
 plusBtn.addEventListener("click", increment);
 minusBtn.addEventListener("click", decrement);
-addToCart.addEventListener("click", addItem);
+addToBtn.addEventListener("click", addItem);
