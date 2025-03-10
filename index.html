@@ -9,18 +9,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <!--css files-->
+  
+  <link href="/styles/test.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +25,24 @@
     Sneaker Company
   </header>
   <div id="content-container">
-    <section id="lightbox-container"></section>
+    <section id="image-container">
+      <div class="products">
+        <img src="/images/image-product-1.jpg" id="product1" class="active">
+        <img src="images/image-product-2.jpg" id="product2">
+        <img src="images/image-product-3.jpg" id="product3">
+        <img src="images/image-product-4.jpg" id="product4">
+      </div>
+      <div id="thumbnails">
+        <div class="active">
+          <img src="images/image-product-1-thumbnail.jpg" id="thumbnail1" class="tn">
+        </div>
+        <img src="images/image-product-2-thumbnail.jpg" id="thumbnail2" class="tn">
+        <img src="images/image-product-3-thumbnail.jpg" id="thumbnail3" class="tn">
+        <img src="images/image-product-4-thumbnail.jpg" id="thumbnail4" class="tn">
+      </div>
+    </section>
+    </div>
+
     <section id="product-info">
 
       Fall Limited Edition Sneakers
@@ -49,10 +57,6 @@
       0
       Add to cart
     </section>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 
