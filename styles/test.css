@@ -1,50 +1,68 @@
-#content-container{
-    display: flex;
-    width: fit-content;
-}
-
-#image-container{
+.gallery{
     display: flex;
     flex: 1;
     flex-direction: column;
     gap: 30px;
 }
 
-.products img {
+.main{
+    display: flex;
+    gap: 125px;
+    min-height: 570px;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.main-img img {
     display: none;
 }
 
-.products img.active {
+.main-img img.active {
     display: inline-block;
     max-width: 445px;
     max-height: 445px;
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    cursor: pointer;
 }
 
-#thumbnails {
+.thumbnails {
     display: flex;
     justify-content: space-between;
     max-width: 445px;
     width: 100%;
 }
 
-.tn {
+.thumbnails div {
     max-width: 90px;
     max-height: 90px;
     margin: 0 2px;
+}
+
+
+.thumbnails img{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.tn:hover {
+.thumbnails img:hover {
     opacity: 50%;
 }
 
-#thumbnais .active img{
+.thumbnails .active img {
     opacity: 30%;
 }
 
+.thumbnails .active {
+    border: 2px solid hsl(26, 100%, 55%) ;
+    border-radius: 13px;
+    margin: 0px;  
+}
 
-testi
+
+
+
+
