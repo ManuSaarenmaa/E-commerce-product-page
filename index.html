@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <link rel="stylesheet" href="./header.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +15,16 @@
   
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <!--css files-->
+  
+  <link href="/styles/test.css" rel="stylesheet">
+  <script src="gallery.js" defer></script>
 </head>
+
 <body>
+
 <header id="nav-bar">
   <img src="./images/logo.svg"/>
   <div class="nav-bar-wrapper">
@@ -31,9 +37,47 @@
   </ul>
 </div>
 </header>
-<section id="lightbox-container"></section>
-<section id="product-info">
 
-</section>
+  <section class="main">
+    <div class="default gallery">
+      <div class="main-img">
+        <img src="/images/image-product-1.jpg" class="active">
+        <img src="images/image-product-2.jpg">
+        <img src="images/image-product-3.jpg">
+        <img src="images/image-product-4.jpg">
+      </div>
+      <div class="thumbnails">
+      <div class="active">
+          <img src="images/image-product-1-thumbnail.jpg" class="active">
+        </div>
+        <div>
+          <img src="images/image-product-2-thumbnail.jpg">
+        </div>
+        <div>
+          <img src="images/image-product-3-thumbnail.jpg">
+        </div>
+        <div>
+          <img src="images/image-product-4-thumbnail.jpg">
+       </div> 
+      </div>
+    </section>
+    </div>
+
+    <section id="product-info">
+
+      Fall Limited Edition Sneakers
+
+      These low-profile sneakers are your perfect casual wear companion. Featuring a
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+      $125.00
+      50%
+      $250.00
+
+      0
+      Add to cart
+    </section>
+  </div>
 </body>
+
 </html>
