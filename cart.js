@@ -14,7 +14,7 @@ function checkEmptyCart() {
   if (cartItems.children.length === 0) {
     emptyMessage = document.createElement("p");
     emptyMessage.classList.add("empty-message");
-    emptyMessage.textContent = "Your cart is empty!";
+    emptyMessage.textContent = "Your cart is empty.";
     cartItems.appendChild(emptyMessage);
     checkoutBtn.style.display = "none";
   } else {
