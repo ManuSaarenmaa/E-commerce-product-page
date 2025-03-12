@@ -31,12 +31,5 @@ function updateCount(text, animationClass) {
     }, 1000);
 }
 
-function addItem() {
-    alert(count);
-    counterD.textContent = "0";
-    count = 0;
-}
-
 plusBtn.addEventListener("click", increment);
 minusBtn.addEventListener("click", decrement);
-addToBtn.addEventListener("click", addItem);
