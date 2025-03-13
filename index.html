@@ -18,6 +18,8 @@
   <!--css files-->
   
   <link href="/styles/test.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/cart.css" />
+  <link rel="stylesheet" href="/styles/product-info.css" />
 </head>
 
 <body>
@@ -33,6 +35,18 @@
     <li><a href="contact.asp">Contact</a></li>
   </ul>
 </div>
+ <div class="right-navbar">
+  <button class="cart-button">
+          <img src="images/icon-cart.svg" alt="cart" />
+        </button>
+        <div class="cart">
+          <span>Cart</span>
+          <div class="cart-items">
+          </div>
+          <button class="checkout-button">Checkout</button>
+        </div>
+        <img class="avatar" src="images/image-avatar.png" alt="avatar" />
+      </div>
 </header>
 
   <section class="main">
@@ -60,21 +74,40 @@
     </section>
     </div>
 
-    <section id="product-info">
-
-      Fall Limited Edition Sneakers
-
-      These low-profile sneakers are your perfect casual wear companion. Featuring a
-      durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-      $125.00
-      50%
-      $250.00
-
-      0
-      Add to cart
-    </section>
-  </div>
+      <section class="product-info">
+        <div class="product-details">
+          <span class="company-name">SNEAKER COMPANY</span>
+          <h1 class="product-name" data-name="Fall Limited Edition Sneakers">
+            Fall Limited Edition Sneakers
+          </h1>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div class="price-container">
+          <span class="curr-price" data-price="125.00">$125.00</span>
+          <span class="discount">50%</span>
+          <span class="prev-price">$250.00</span>
+        </div>
+        <div class="checkout-container">
+          <div class="counter">
+            <button class="minus-button">
+              <img src="./images/icon-minus.svg" alt="minut-icon" />
+            </button>
+            <p class="counter-display">0</p>
+            <button class="plus-button">
+              <img src="./images/icon-plus.svg" alt="plus-icon" />
+            </button>
+          </div>
+          <button class="addToCart-button" onclick="addItem()">
+            <img src="./images/icon-cart.svg" alt="cart-icon" />Add to cart
+          </button>
+        </div>
+      </section>
   <script src="gallery.js"></script>
+  <script src="cart.js"></script>
+  <script src="product-info.js"></script>
 </body>
 </html>
