@@ -16,8 +16,7 @@
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!--css files-->
-  
-  <link href="/styles/test.css" rel="stylesheet">
+  <link href="/styles/gallery.css" rel="stylesheet">
   <link rel="stylesheet" href="/styles/cart.css" />
   <link rel="stylesheet" href="/styles/product-info.css" />
 </head>
@@ -57,9 +56,9 @@
         <img src="images/image-product-3.jpg">
         <img src="images/image-product-4.jpg">
       </div>
-      <div class="thumbnails">
-      <div class="active">
-          <img src="images/image-product-1-thumbnail.jpg" class="active">
+        <div class="thumbnails">
+        <div class="active">
+          <img src="images/image-product-1-thumbnail.jpg">
         </div>
         <div>
           <img src="images/image-product-2-thumbnail.jpg">
@@ -73,6 +72,42 @@
       </div>
     </section>
     </div>
+
+   <div class="lightbox">
+    <div class="default gallery">
+     <div class="lightbox-btns">
+      <button class="lb-close">
+        <img src="/images/icon-close.svg">
+      </button>
+      <button class="lb-prev">
+        <img src="/images/icon-previous.svg">
+      </button>
+      <button class="lb-next">
+        <img src="/images/icon-next.svg">
+      </button>
+     </div> 
+      <div class="main-img">
+        <img src="/images/image-product-1.jpg" class="active">
+        <img src="images/image-product-2.jpg">
+        <img src="images/image-product-3.jpg">
+        <img src="images/image-product-4.jpg">
+      </div>
+        <div class="thumbnails">
+        <div class="active">
+          <img src="images/image-product-1-thumbnail.jpg">
+        </div>
+        <div>
+          <img src="images/image-product-2-thumbnail.jpg">
+        </div>
+        <div>
+          <img src="images/image-product-3-thumbnail.jpg">
+        </div>
+        <div>
+          <img src="images/image-product-4-thumbnail.jpg">
+       </div> 
+      </div>
+    </div>
+   </div>
 
       <section class="product-info">
         <div class="product-details">
@@ -106,8 +141,9 @@
           </button>
         </div>
       </section>
-  <script src="gallery.js"></script>
   <script src="cart.js"></script>
   <script src="product-info.js"></script>
+  <script src="gallery.js"></script>
 </body>
 </html>
+
