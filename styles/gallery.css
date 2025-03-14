@@ -1,3 +1,7 @@
+ *{
+    box-sizing: border-box;
+ }
+
 .gallery{
     display: flex;
     flex: 1;
@@ -48,19 +52,27 @@
     cursor: pointer;
 }
 
-.thumbnails img:hover {
-    opacity: 50%;
-}
-
-.thumbnails .active img {
-    opacity: 30%;
-}
-
 .thumbnails .active {
-    border: 2px solid hsl(26, 100%, 55%) ;
-    border-radius: 13px;
-    margin: 0px;
-    
+  display: inline-block;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 13px;
+
+}
+
+.thumbnails .active img{
+ display: block;
+ opacity: 0.5;
+}
+
+.thumbnails img:hover{
+    opacity: 0.6;
 }
 
 
+.lightbox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    display: none;
+}
