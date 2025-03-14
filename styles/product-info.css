@@ -2,8 +2,7 @@
   width: 70vw;
   height: 35vw;
   display: flex;
-  margin: 5vw auto;
-
+  margin: 2vw auto;
   gap: 2vw;
 }
 
@@ -85,6 +84,10 @@
 .counter .counter-display {
   margin: auto;
   font-size: 1vw;
+}
+
+.counter-display:hover {
+  cursor: default;
 }
 
 .counter .minus-button {
