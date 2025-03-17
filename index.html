@@ -48,102 +48,103 @@
       </div>
 </header>
 
+<div class="main-page">
   <section class="main">
     <div class="default gallery">
       <div class="main-img">
         <img src="/images/image-product-1.jpg" class="active">
-        <img src="images/image-product-2.jpg">
-        <img src="images/image-product-3.jpg">
-        <img src="images/image-product-4.jpg">
+        <img src="/images/image-product-2.jpg">
+        <img src="/images/image-product-3.jpg">
+        <img src="/images/image-product-4.jpg">
       </div>
         <div class="thumbnails">
         <div class="active">
           <img src="images/image-product-1-thumbnail.jpg">
         </div>
         <div>
-          <img src="images/image-product-2-thumbnail.jpg">
+          <img src="/images/image-product-2-thumbnail.jpg">
         </div>
         <div>
-          <img src="images/image-product-3-thumbnail.jpg">
+          <img src="/images/image-product-3-thumbnail.jpg">
         </div>
         <div>
-          <img src="images/image-product-4-thumbnail.jpg">
+          <img src="/images/image-product-4-thumbnail.jpg">
        </div> 
       </div>
-    </section>
-    </div>
+    </div> 
+</section>
 
-   <div class="lightbox">
-    <div class="default gallery">
-     <div class="lightbox-btns">
+<div class="lightbox">
+  <div class="lb-gallery">  
+    <div class="main-img">
       <button class="lb-close">
-        <img src="/images/icon-close.svg">
+        <img src="/images/icon-close.svg" alt="close">
       </button>
-      <button class="lb-prev">
+      <button class="lb-prev" alt="prev">
         <img src="/images/icon-previous.svg">
       </button>
-      <button class="lb-next">
+      <button class="lb-next" alt="next">
         <img src="/images/icon-next.svg">
       </button>
-     </div> 
-      <div class="main-img">
-        <img src="/images/image-product-1.jpg" class="active">
-        <img src="images/image-product-2.jpg">
-        <img src="images/image-product-3.jpg">
-        <img src="images/image-product-4.jpg">
-      </div>
-        <div class="thumbnails">
-        <div class="active">
-          <img src="images/image-product-1-thumbnail.jpg">
-        </div>
-        <div>
-          <img src="images/image-product-2-thumbnail.jpg">
-        </div>
-        <div>
-          <img src="images/image-product-3-thumbnail.jpg">
-        </div>
-        <div>
-          <img src="images/image-product-4-thumbnail.jpg">
-       </div> 
-      </div>
+      <img src="/images/image-product-1.jpg" class="active">
+      <img src="/images/image-product-2.jpg">
+      <img src="/images/image-product-3.jpg">
+      <img src="/images/image-product-4.jpg">
     </div>
-   </div>
+      <div class="thumbnails">
+      <div class="active">
+        <img src="/images/image-product-1-thumbnail.jpg">
+      </div>
+      <div>
+        <img src="/images/image-product-2-thumbnail.jpg">
+      </div>
+      <div>
+        <img src="/images/image-product-3-thumbnail.jpg">
+      </div>
+      <div>
+        <img src="/images/image-product-4-thumbnail.jpg">
+     </div> 
+    </div>
+  </div>
+</div>
 
-      <section class="product-info">
-        <div class="product-details">
-          <span class="company-name">SNEAKER COMPANY</span>
-          <h1 class="product-name" data-name="Fall Limited Edition Sneakers">
-            Fall Limited Edition Sneakers
-          </h1>
-          <p class="product-description">
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they’ll withstand everything
-            the weather can offer.
-          </p>
-        </div>
-        <div class="price-container">
-          <span class="curr-price" data-price="125.00">$125.00</span>
-          <span class="discount">50%</span>
-          <span class="prev-price">$250.00</span>
-        </div>
-        <div class="checkout-container">
-          <div class="counter">
-            <button class="minus-button">
-              <img src="./images/icon-minus.svg" alt="minut-icon" />
-            </button>
-            <p class="counter-display">0</p>
-            <button class="plus-button">
-              <img src="./images/icon-plus.svg" alt="plus-icon" />
-            </button>
-          </div>
-          <button class="addToCart-button" onclick="addItem()">
-            <img src="./images/icon-cart.svg" alt="cart-icon" />Add to cart
-          </button>
-        </div>
-      </section>
-  <script src="cart.js"></script>
-  <script src="product-info.js"></script>
-  <script src="gallery.js"></script>
+<section class="product-info">
+  <div class="product-details">
+    <span class="company-name">SNEAKER COMPANY</span>
+    <h1 class="product-name" data-name="Fall Limited Edition Sneakers">
+      Fall Limited Edition Sneakers
+    </h1>
+    <p class="product-description">
+      These low-profile sneakers are your perfect casual wear companion.
+      Featuring a durable rubber outer sole, they’ll withstand everything
+      the weather can offer.
+    </p>
+  </div>
+  <div class="price-container">
+    <span class="curr-price" data-price="125.00">$125.00</span>
+    <span class="discount">50%</span>
+    <span class="prev-price">$250.00</span>
+  </div>
+  <div class="checkout-container">
+    <div class="counter">
+      <button class="minus-button">
+        <img src="./images/icon-minus.svg" alt="minut-icon" />
+      </button>
+      <p class="counter-display">0</p>
+      <button class="plus-button">
+        <img src="./images/icon-plus.svg" alt="plus-icon" />
+      </button>
+    </div>
+    <button class="addToCart-button" onclick="addItem()">
+      <img src="./images/icon-cart.svg" alt="cart-icon" />Add to cart
+    </button>
+  </div>
+</section>
+</div>
+
+
+<script src="cart.js"></script>
+<script src="product-info.js"></script>
+<script src="gallery.js"></script>
 </body>
 </html>
-
