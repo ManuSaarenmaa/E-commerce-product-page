@@ -1,0 +1,37 @@
+.side-navbar {
+  display: none;
+}
+
+.side-content {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 550px) {
+  #nav-bar {
+    all: unset;
+    height: 8rem;
+  }
+
+  .left-navbar {
+    display: none;
+  }
+
+  .side-navbar {
+    display: flex;
+  }
+
+  .side-navbar .menu-button {
+    all: unset;
+  }
+
+  .side-navbar .menu-button:hover {
+    cursor: pointer;
+  }
+
+  .side-navbar .m-logo {
+    margin-left: 2rem;
+    width: 100%;
+  }
+}
