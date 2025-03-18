@@ -289,7 +289,6 @@ html {
 
   .checkout-container {
     flex-direction: column;
-    margin-bottom: 8rem;
   }
 
   .checkout-container .counter {
