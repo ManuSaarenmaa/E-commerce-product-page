@@ -23,30 +23,27 @@
 
 <body>
 
-<header id="nav-bar">
-  <img src="./images/logo.svg"/>
-  <div class="nav-bar-wrapper">
-  <ul class="nav-container">
-    <li><a href="default.asp">Collections</a></li>
-    <li><a href="Men.asp">Men</a></li>
-    <li><a href="contact.asp">Women</a></li>
-    <li><a href="about.asp">About</a></li>
-    <li><a href="contact.asp">Contact</a></li>
-  </ul>
-</div>
- <div class="right-navbar">
-  <button class="cart-button">
-          <img src="images/icon-cart.svg" alt="cart" />
-        </button>
-        <div class="cart">
-          <span>Cart</span>
-          <div class="cart-items">
-          </div>
-          <button class="checkout-button">Checkout</button>
-        </div>
-        <img class="avatar" src="images/image-avatar.png" alt="avatar" />
+  <header id="nav-bar">
+    <div class="side-navbar">
+      <button class="menu-button">
+        <img src="images/icon-menu.svg" alt="menu" />
+      </button>
+      <img src="images/logo.svg" class="m-logo" alt="logo" />
+    </div>
+    <div class="left-navbar">Collections Men Women About Contact</div>
+    <div class="right-navbar">
+      <span class="quantity"></span>
+      <button class="cart-button">
+        <img src="images/icon-cart.svg" alt="cart" />
+      </button>
+      <div class="cart">
+        <span>Cart</span>
+        <div class="cart-items"></div>
+        <button class="checkout-button">Checkout</button>
       </div>
-</header>
+      <img class="avatar" src="images/image-avatar.png" alt="avatar" />
+    </div>
+  </header>
 
 <div class="main-page">
   <section class="main">
