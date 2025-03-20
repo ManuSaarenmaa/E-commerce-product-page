@@ -10,7 +10,7 @@
   @media screen and (max-width: 550px) {
     #nav-bar {
       all: unset;
-      height: 8vw;
+      height: 8rem;
     }
   
     .left-navbar {
@@ -23,7 +23,6 @@
   
     .side-navbar .menu-button {
       all: unset;
-      margin-top: 2vw;
     }
   
     .side-navbar .menu-button:hover {
@@ -31,7 +30,7 @@
     }
   
     .side-navbar .m-logo {
-      margin-left: 3vw;
+      margin-left: 2rem;
       width: 100%;
     }
   }

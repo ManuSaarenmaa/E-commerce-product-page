@@ -2,24 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1vw 5vw;
+  padding: 1rem 5rem;
 }
 
 .right-navbar {
   display: flex;
   align-items: center;
-  gap: 1.5vw;
+  gap: 2rem;
 }
 
 .quantity {
   position: absolute;
-  top: 1vw;
-  margin-left: 0.4vw;
+  top: 1rem;
+  margin-left: 0.8rem;
   color: white;
   background-color: #ff6730;
-  font-size: 0.6vw;
+  font-size: 1rem;
   font-weight: bolder;
-  padding: 0.1vw 0.4vw 0.1vw 0.4vw;
+  padding: 0.1rem 0.4rem 0.1rem 0.4rem;
   border-radius: 50%;
 }
 
@@ -29,7 +29,7 @@
 
 .cart-button {
   all: unset;
-  width: 1.5vw;
+  width: 2rem;
   position: relative;
 }
 
@@ -44,12 +44,12 @@
 
 .cart {
   position: absolute;
-  width: 15vw;
+  width:30rem;
   background-color: white;
-  right: 2vw;
-  top: 4vw;
-  padding: 1vw;
-  border-radius: 0.5vw;
+  right: 2rem;
+  top: 6rem;
+  padding: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
@@ -67,9 +67,9 @@
 .cart span {
   display: block;
   width: 100%;
-  margin: -1vw 0 0 -1vw;
-  padding: 0.5vw 1vw 0.5vw 1vw;
-  font-size: 0.8vw;
+  margin: -2rem 0 0 -2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   background-color: white;
   border-bottom: 2px solid #dcdcdc;
@@ -78,24 +78,24 @@
 .cart-items {
   display: flex;
   flex-direction: column;
-  gap: 0.5vw;
+  gap: 0.5rem;
 }
 
 .cart-item {
   display: flex;
   align-items: center;
-  gap: 0.5vw;
+  gap: 1rem;
 }
 
 .p-img {
-  width: 3vw;
-  height: 3vw;
-  border-radius: 6px;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
   flex-shrink: 0;
 }
 
 .p-text {
-  font-size: 0.85vw;
+  font-size: 1.5rem;
 }
 
 .p-name,
@@ -106,9 +106,9 @@
 .delete-button {
   all: unset;
   position: absolute;
-  width: 0.8vw;
-  height: 0.8vw;
-  right: 1vw;
+  width: 2rem;
+  height: 0.8rem;
+  right: 2rem;
 }
 
 .delete-button:hover {
@@ -116,19 +116,19 @@
 }
 
 .delete-button img {
-  width: 0.8vw;
-  height: 0.8vw;
+  width: 2rem;
+  height: 2rem;
 }
 
 .checkout-button {
   all: unset;
   width: 100%;
-  height: 2vw;
+  height: 3rem;
   background-color: #ff8c00;
   text-align: center;
-  font-size: 0.8vw;
+  font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -138,13 +138,13 @@
 }
 
 .empty-message {
-  font-size: 1vw;
+  font-size: 2rem;
   font-weight: bolder;
   text-align: center;
 }
 
 .avatar {
-  width: 2vw;
+  width: 3rem;
 }
 
 .avatar:hover {
@@ -154,18 +154,18 @@
 
 @media screen and (max-width: 550px) {
   .right-navbar .cart-button {
-    width: 4vw;
+    width: 4rem;
   }
 
   .right-navbar .avatar {
-    width: 4vw;
+    width: 4rem;
   }
 
   .right-navbar .quantity {
-    top: 1.5vw;
-    width: 4vw;
-    font-size: 2vw;
-    margin-left: 0.5vw;
+    top: 1.5rem;
+    width: 4rem;
+    font-size: 3rem;
+    margin-top: -1.5rem;
     text-align: center;
   }
 
@@ -176,45 +176,48 @@
 
   .cart {
     position: absolute;
-    top: 10vw;
+    top: 5%;
     width: 95%;
     height: fit-content;
-    padding: 4vw 4vw 5vw 4vw;
+    padding: 4rem 4rem 5rem 4rem;
   }
 
   .cart span {
-    width: calc(100% + 8vw);
-    margin-left: -4vw;
-    padding-left: 4vw;
-    padding-bottom: 4vw;
-    font-size: 4vw;
+    width: calc(100% + 8rem);
+    margin-left: -4rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+    font-size: 4rem;
     border-bottom: 2px solid silver;
   }
 
   .cart .cart-items {
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .cart-item .p-img {
-    width: 12vw;
-    height: 12vw;
+    width: 12rem;
+    height: 12rem;
   }
 
   .cart-item .p-text {
-    margin-left: 2vw;
-    font-size: 5vw;
+    margin-left: 2rem;
+    font-size: 4rem;
   }
 
   .cart-item .delete-button, .delete-button img{
-    width: 4vw;
-    height: 4vw;
-    margin-right: 3vw;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
   }
 
-
   .checkout-button {
-    font-size: 6vw;
-    height: 10vw;
+    font-size: 4rem;
+    height: 10rem;
+  }
+
+  .empty-message {
+    font-size: 5rem;
   }
 }
