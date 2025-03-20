@@ -1,6 +1,13 @@
 *{
     box-sizing: border-box;
  }
+
+ .main-page {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+ }
+ 
 /*image gallery */
 @media screen and (min-width: 900px) {
 .gallery{
