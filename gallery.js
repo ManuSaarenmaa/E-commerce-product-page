@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainImages = document.querySelectorAll(".default .main-img img");
     const thumbNails = document.querySelectorAll(".default .thumbnails div");
 
-    const lightBoxMainImages = document.querySelectorAll(".lightbox .main-img > img");
+    const lightBoxMainImages = document.querySelectorAll(".lightbox .lb-main-img > img");
     const lightBoxThumbNails = document.querySelectorAll(".lightbox .thumbnails div");
 
     const lightbox = document.querySelector('.lightbox');

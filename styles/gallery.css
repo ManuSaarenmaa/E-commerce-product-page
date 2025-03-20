@@ -2,6 +2,7 @@
     box-sizing: border-box;
  }
 /*image gallery */
+@media screen and (min-width: 900px) {
 .gallery{
     display: flex;
     flex: 1;
@@ -91,8 +92,23 @@
 }
 
 .lightbox .lb-gallery {
-    max-width: 445px;
+    max-width: 600px;
 }
+
+.lb-main-img img{
+    display: none;
+}
+
+.lb-main-img img.active {
+    display: inline-block;
+    min-width: 600px;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 
 .lb-gallery{
     display: flex;
@@ -103,7 +119,7 @@
 }
 
 
-.lightbox .main-img {
+.lightbox .lb-main-img {
     position: relative;
     max-width: 600px;
     max-height: 600px;
@@ -112,10 +128,14 @@
     height: 100%;
 }
 
+.lightbox .thumbnails{
+    padding: 0px 5% 0px 5%;
+}
+
 .lightbox .lb-next, .lightbox .lb-prev {
     position: absolute;
-    height: 55px;
-    width: 55px;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -164,7 +184,7 @@
 }
 
 
-.lightbox .main-img img.active {
+.lightbox .lb-main-img img.active {
     max-width: 445px;
     max-height: 445px;
     width: 100%;
@@ -176,3 +196,69 @@
     background-color: white;
     border-radius: 13px;
 }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    body{
+        margin: 0px;
+        width: fit-content;
+    }
+
+    .default{
+        display: none;
+    }
+
+    .lb-main-img img {
+        display: none;
+    }
+
+    .lb-main-img img.active {
+        display: inline-block;
+        width: 100vw;
+    }
+
+    .lb-main-img button{
+        display: inline-block;
+    }
+
+    .lightbox .thumbnails{
+        display: none;
+    }
+
+    .lightbox .lb-next, .lightbox .lb-prev {
+        position: absolute;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: transparent;
+        margin: 5%;
+    }
+
+    .lightbox button img{
+        display: inline-block;
+    }
+
+    .lightbox .lb-close{
+        display: none;
+    }
+
+    .lb-main-img{
+        display: flex;
+        align-items: center;
+    }
+
+    .lb-next {
+       right: 0;
+    }
+
+    .main-page{
+        flex-direction: column;
+    }
+
+    }
