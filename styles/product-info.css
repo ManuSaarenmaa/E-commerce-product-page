@@ -180,3 +180,9 @@
  .main-page{
   display: flex;
  }
+
+@media screen and (max-width: 900px) {
+  .product-info{
+    margin: 0px;
+}
+}

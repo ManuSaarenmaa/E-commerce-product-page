@@ -33,10 +33,7 @@ li a{
   margin-left: 50px;
   
 }
-
-header img {
-  height: 15px;
-}
+ 
 li a:hover::after {
   opacity: 1;
 }
