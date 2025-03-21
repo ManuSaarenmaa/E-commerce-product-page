@@ -85,7 +85,7 @@ function addItem() {
     let pPrice = document.createElement("p");
     pPrice.classList.add("p-price");
     pPrice.dataset.quantity = count;
-    pPrice.innerHTML = `$${pricePerItem} x ${count} <strong>$${summary.toFixed(
+    pPrice.innerHTML = `$${pricePerItem} x ${count} <strong style="color: black">$${summary.toFixed(
       2
     )}</strong>`;
 
