@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 768px) {
   #nav-bar {
-    padding: 1.5rem 0 !important;
+    padding: 1rem 0 !important;
   }
 
   .menu-overlay {
@@ -148,8 +148,8 @@
     margin: auto;
     border: none;
   }
-  
-   .side-navbar {
+
+  .side-navbar {
     display: flex;
     align-items: center;
   }
