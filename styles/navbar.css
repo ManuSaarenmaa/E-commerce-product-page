@@ -57,36 +57,6 @@
 }
 
 
-@media screen and (max-width: 768px){
-
-  #nav-bar {
-    margin: 0px;
-  }
-
-  .left-navbar  {
-    display: none;
-  }
-  .side-navbar {
-    display: flex;
-    align-items: center;
-    margin-right: 35%;
-  }
-
-  .side-navbar .menu-button {
-    all: unset;
-  }
-
-  .side-navbar .menu-button:hover {
-    cursor: pointer;
-  }
-
-  .side-navbar .m-logo {
-    margin-left: 3rem;
-    height: 30%;
-  }
-}
-
-
 @media screen and (max-width: 768px) {
   #nav-bar {
     padding: 1rem 0 !important;
@@ -152,6 +122,7 @@
   .side-navbar {
     display: flex;
     align-items: center;
+    margin-right: 15%;
   }
 
   .side-navbar .menu-button {
