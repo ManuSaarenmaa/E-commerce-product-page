@@ -223,66 +223,41 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    font-size: 7px;
-  }
-  .product-info{
-    width: 100%;
-    margin-left: 0px;
-    padding: 0% 5% 0% 5%;
-  }
-}
-
-@media screen and (max-width: 550px) {
   * {
     margin: 0;
     box-sizing: border-box;
-    max-height: 900px;
   }
 
   html {
     font-size: 6px;
   }
 
-  #content-container {
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: fit-content;
-    gap: 0;
-  }
-
-  .testImg {
-    width: 100%;
+  body {
     height: 100%;
   }
 
   .product-info {
-    width: 100%;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    height: fit-content;
     justify-content: flex-start;
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-    margin-bottom: 100px;
-    margin-left: 0px;
-    padding: 0% 5% 0% 5%;
   }
 
-  .product-info .company-name {
-    font-size: 2rem;
+  .product-details .company-name {
+    margin-top: 0;
+    font-size: 4rem;
   }
 
   .product-details .product-name {
-    margin-top: 2rem;
-    font-size: 5rem;
-    margin: 0px;
+    margin-top: 1rem;
+    font-size: 9rem;
   }
 
   .product-details .product-description {
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 4rem;
+
   }
 
   .price-container {
@@ -292,7 +267,7 @@ body {
   }
 
   .price-container .current-price {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   .price-container .discount {
@@ -301,9 +276,9 @@ body {
     align-items: center;
     height: 5rem;
     margin-left: 3rem;
+    padding: 1rem 1.5rem;
     font-size: 3rem;
     border-radius: 1.5rem;
-    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
   }
 
   .price-container .original-price {
@@ -318,9 +293,9 @@ body {
 
   .checkout-container .counter {
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     border-radius: 1rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
 
   .counter img {
@@ -333,11 +308,6 @@ body {
     font-size: 4rem;
   }
 
-  .counter .plus-button img{
-    width: 15px;
-    height: 15px;
-  }
-
   .float-up,
   .float-down {
     display: none;
@@ -345,12 +315,11 @@ body {
 
   .checkout-container .addToCart-button {
     width: 100%;
-    font-size: 3rem;
-    margin-top: 2rem;
+    font-size: 4rem;
+    margin-top: 3rem;
     margin-left: 0;
-    padding: 2rem 0;
+    padding: 3rem 0;
     border-radius: 1rem;
-    box-shadow: 0px 20px 30px hsl(26, 100%, 85%);
   }
 
   .checkout-container .addToCart-button:hover {
@@ -363,3 +332,4 @@ body {
     height: 3rem;
   }
 }
+
