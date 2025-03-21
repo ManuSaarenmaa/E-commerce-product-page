@@ -279,3 +279,16 @@
     }
 
     }
+
+
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+
+        .gallery{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 340px;
+            margin-right: 5%;
+        }
+    }

@@ -56,6 +56,7 @@
   display: none;
 }
 
+
 @media screen and (max-width: 768px){
 
   #nav-bar {
@@ -147,8 +148,8 @@
     margin: auto;
     border: none;
   }
-
-  .side-navbar {
+  
+   .side-navbar {
     display: flex;
     align-items: center;
   }
@@ -166,3 +167,19 @@
     height: 50%;
   }
 }
+
+
+@media screen and (min-width: 769px) and (max-width: 888px) {
+  .left-navbar a{
+    font-size: 0.8rem;
+  }
+  
+  .right-navbar  img{
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  .right-navbar{
+    gap: 0.1rem;
+}
+
