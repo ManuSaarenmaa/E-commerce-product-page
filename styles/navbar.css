@@ -28,12 +28,12 @@
 
 .left-navbar a {
   color: gray;
-  text-decoration: none; 
+  font-size: 1.2rem;
   position: relative;
 }
 
 .left-navbar a:hover {
-  color: skyblue;
+  color: black;
   cursor: pointer;
 }
 
@@ -42,14 +42,14 @@
   display: block;
   width: 100%;
   position: absolute;
-  bottom: -2rem;
-  border-bottom: 2px solid orange;
+  bottom: -3rem;
+  border-bottom: 3px solid orange;
 }
 
 .right-navbar {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .mobile-navbar {
