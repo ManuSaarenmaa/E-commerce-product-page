@@ -2,6 +2,7 @@ let cart = document.querySelector(".cart");
 let cartBtn = document.querySelector(".cart-button");
 let cartItems = document.querySelector(".cart-items");
 let checkoutBtn = document.querySelector(".checkout-button");
+let quantityIndicator = document.querySelector(".quantity");
 
 function toggleCart() {
   cart.classList.toggle("active");
@@ -24,6 +25,17 @@ function checkEmptyCart() {
     }
     checkoutBtn.style.display = "";
   }
+  updateCartQuantity();
+}
+
+function updateCartQuantity() {
+  let totalQuantity = Array.from(cartItems.children).reduce((sum, item) => {
+    let priceElement = item.querySelector(".p-price");
+    return sum + (priceElement ? parseInt(priceElement.dataset.quantity) : 0);
+  }, 0);
+
+  quantityIndicator.textContent = totalQuantity;
+  quantityIndicator.style.display = totalQuantity > 0 ? "inline-block" : "none";
 }
 
 checkEmptyCart();
@@ -35,28 +47,28 @@ function addItem() {
   }
 
   let productName = document.querySelector(".product-name").dataset.name;
-  let pCurrentPrice = document.querySelector(".curr-price");
+  let pCurrentPrice = document.querySelector(".current-price");
   let pricePerItem = parseFloat(pCurrentPrice.dataset.price);
   let summary = pricePerItem * count;
 
-  let existingCartItem = Array.from(
-    document.querySelectorAll(".cart-item")
-  ).find((item) => item.querySelector(".p-name").innerText === productName);
+  let existingCartItem = Array.from(cartItems.children).find(
+    (item) => item.dataset.name === productName
+  );
 
   if (existingCartItem) {
     let priceElement = existingCartItem.querySelector(".p-price");
-
-    let currentQuantity = parseInt(priceElement.innerText.split(" x ")[1]);
+    let currentQuantity = parseInt(priceElement.dataset.quantity);
     let newQuantity = currentQuantity + count;
-
     let newTotalPrice = pricePerItem * newQuantity;
 
+    priceElement.dataset.quantity = newQuantity;
     priceElement.innerHTML = `$${pricePerItem} x ${newQuantity} <strong>$${newTotalPrice.toFixed(
       2
     )}</strong>`;
   } else {
     let cartItem = document.createElement("div");
     cartItem.classList.add("cart-item");
+    cartItem.dataset.name = productName;
 
     let pImg = document.createElement("img");
     pImg.src = "images/image-product-1-thumbnail.jpg";
@@ -72,6 +84,7 @@ function addItem() {
 
     let pPrice = document.createElement("p");
     pPrice.classList.add("p-price");
+    pPrice.dataset.quantity = count;
     pPrice.innerHTML = `$${pricePerItem} x ${count} <strong>$${summary.toFixed(
       2
     )}</strong>`;
