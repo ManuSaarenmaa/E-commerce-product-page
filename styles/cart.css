@@ -149,6 +149,7 @@
   }
 }
 
+
 @media screen and (max-width: 768px) {
 
   .right-navbar .cart-button {
@@ -226,4 +227,5 @@
     margin-bottom: 1rem;
   }
 }
+
 
