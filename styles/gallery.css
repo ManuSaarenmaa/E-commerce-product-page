@@ -10,7 +10,7 @@
  }
  
 /*image gallery */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
 .gallery{
     display: flex;
     flex: 1;
@@ -52,8 +52,8 @@
 }
 
 .thumbnails div {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 105px;
+    max-height: 105px;
     margin: 0 2px;
 }
 
@@ -237,8 +237,8 @@
 
     .lightbox .lb-next, .lightbox .lb-prev {
         position: absolute;
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 5.5rem;
+        width: 5.5rem;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -250,6 +250,8 @@
 
     .lightbox button img{
         display: inline-block;
+        height: 2rem;
+        width: 1.5rem;
     }
 
     .lightbox .lb-close{

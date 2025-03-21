@@ -106,19 +106,26 @@
     display: none;
   }
 
+  .right-navbar .cart-button {
+    margin-right: 10px;
+  }
+
   #nav-bar {
     all: unset;
     display: flex;
-    width: 95%;
-    height: 8rem;
-    justify-content: space-between;
+    width: 92%;
+    padding: 0px 4% 0px 4%;
+    height: 9rem;
     margin: auto;
     border: none;
+    position: absolute;
+    background-color: white;
   }
 
   .side-navbar {
     display: flex;
     align-items: center;
+    margin-right: 35%;
   }
 
   .side-navbar .menu-button {
@@ -131,6 +138,6 @@
 
   .side-navbar .m-logo {
     margin-left: 3rem;
-    height: 50%;
+    height: 30%;
   }
 }
