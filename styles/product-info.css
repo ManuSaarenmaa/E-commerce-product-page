@@ -272,7 +272,7 @@ body {
 
 
 @media screen and (max-width: 768px) {
- * {
+  * {
     margin: 0;
     box-sizing: border-box;
   }
@@ -281,12 +281,8 @@ body {
     font-size: 6px;
   }
 
-  body {
-    height: 100%;
-  }
-
   .product-info {
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding-bottom: 3rem;
     width: 90%;
     height: fit-content;
@@ -299,24 +295,23 @@ body {
   }
 
   .product-details .product-name {
-    margin-top: 1rem;
-    font-size: 9rem;
+    font-size: 5.5rem;
   }
 
   .product-details .product-description {
     margin-top: 2rem;
-    font-size: 4rem;
-
+    font-size: 3rem;
+    line-height: 1.6;
   }
 
   .price-container {
     display: flex;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .price-container .current-price {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 
   .price-container .discount {
@@ -325,13 +320,13 @@ body {
     align-items: center;
     height: 5rem;
     margin-left: 3rem;
-    padding: 1rem 1.5rem;
-    font-size: 3rem;
+    padding: 0 1rem;
+    font-size: 2.5rem;
     border-radius: 1.5rem;
   }
 
   .price-container .original-price {
-    font-size: 4rem;
+    font-size: 3rem;
     position: absolute;
     right: 6%;
   }
@@ -342,7 +337,7 @@ body {
 
   .checkout-container .counter {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 3%;
     border-radius: 1rem;
     padding: 3rem 0;
   }
@@ -365,7 +360,7 @@ body {
   .checkout-container .addToCart-button {
     width: 100%;
     font-size: 4rem;
-    margin-top: 3rem;
+    margin-top: 2%;
     margin-left: 0;
     padding: 3rem 0;
     border-radius: 1rem;
