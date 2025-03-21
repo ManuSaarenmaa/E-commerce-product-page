@@ -10,7 +10,7 @@
  }
  
 /*image gallery */
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 769px) {
 .gallery{
     display: flex;
     flex: 1;
@@ -207,7 +207,7 @@
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
     body{
         margin: 0px;
