@@ -7,12 +7,8 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -32,8 +28,6 @@ Users should be able to:
 ### Screenshot
 ![](/screenshot.png)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -47,10 +41,9 @@ I learned git and github collaboration. Working with scrum team.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Github - [Manu](https://github.com/ManuSaarenmaa)
+- Github - [Jing](https://github.com/kyoujing)
+- Github - [Tino](https://github.com/TinoK01)
 
 ## Acknowledgments
 
